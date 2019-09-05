@@ -32,10 +32,10 @@ public class UrlReader {
                     FileUtils.writeLines(f, lines);
                     System.exit(1);
                 } catch (IOException e) {
-                    System.err.println("There was an exception processing your request: " + e.getMessage());
+                    System.err.println("There was an Error in your request: " + e.getMessage());
                 }
             } catch (MalformedURLException e) {
-                System.err.println("The given URL is not valid or has a problem");
+                System.err.println("Invalid URL");
             }
         }
     }

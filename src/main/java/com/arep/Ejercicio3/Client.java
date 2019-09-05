@@ -28,9 +28,6 @@ public class Client {
                 System.out.println("Square:" + Math.pow(Double.parseDouble(inputLine),2));
                 outputLine = "Square: " + Math.pow(Double.parseDouble(inputLine),2);
                 out.println(outputLine);
-                if (outputLine.equals("Respuestas: Bye."))
-                    break;
-                }
             out.close();
             in.close();
             clientSocket.close();
